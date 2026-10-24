@@ -1,0 +1,43 @@
+{
+	"name": "dsh-rewind-resend",
+	"version": "0.1.0",
+	"private": true,
+	"description": "像 Codex 一样回头改：停掉当前回合，把刚发出的那条消息取回输入框（历史保留在分叉出的新会话里），改完再发",
+	"type": "module",
+	"main": "lib/index.js",
+	"exports": {
+		".": "./lib/index.js",
+		"./client": "./lib/client.js",
+		"./package.json": "./package.json"
+	},
+	"files": [
+		"lib",
+		"cordis.patch.yml",
+		"install.ps1",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"dsh",
+		"dsh-plugin",
+		"codex",
+		"rewind",
+		"resend"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/yangmingzhou-restart/dsh-rewind-resend.git"
+	},
+	"dsh": {
+		"bundle": {
+			"patch": "./cordis.patch.yml"
+		},
+		"client": {
+			"platform": "web"
+		}
+	},
+	"engines": {
+		"dsh": ">=0.2.0"
+	},
+	"license": "MIT"
+}

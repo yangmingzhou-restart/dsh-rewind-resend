@@ -1,0 +1,4 @@
+# Browser-side plugin roster of the dsh-rewind-resend bundle.
+- insert:
+    - id: dsh-rewind-resend
+      name: 'dsh-rewind-resend'
